@@ -15,3 +15,18 @@ public class Main {
 }
 
 // Acoplamento = Classe Cliente (Banco) depende da Classe servidora (ContaCorrente)
+// Cartão CRC (Classe-Responsabilidade Colaboração) = Cartão que expressa a colaboração entre classes
+
+// Cartão CRC:
+
+// -----------------------------------------------------------
+// | Classe Banco                                             |
+// -----------------------------------------------------------
+// | Responsabilidade        | Colaboracao                    |
+// -----------------------------------------------------------
+// | registrarNovaConta      | ContaCorrente (construtor)     |
+//------------------------------------------------------------
+// | getNumeroDeContasAtivas | ContaCorrente (numeroConta)    |
+//------------------------------------------------------------
+// | getSaldoTotal           | ContaCorrente (getSaldoAtual)  |
+// -----------------------------------------------------------
