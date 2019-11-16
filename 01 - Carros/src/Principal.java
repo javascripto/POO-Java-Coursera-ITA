@@ -1,3 +1,4 @@
+import static java.lang.System.out;
 
 public class Principal {
 
@@ -17,12 +18,24 @@ public class Principal {
 		carro.acelerar();
 		carro.frear();
 
-		println(carro.toString());
-		println(carro2.toString());
-	}
-	
-	static void println(String string) {
-		System.out.println(string);
-	}
+		out.println(carro.toString());
+		out.println(carro2.toString());
 
+	}
 }
+
+/*
+ * Ao usar "import static" no lugar de "import"
+ * você pode usar os metodos estaticos sem referenciar o nome da classe
+ *
+ *
+ * import static java.lang.Math.*;
+ * import static java.lang.System.out;
+ *
+ * class Main {
+ *   public static void main(String[] args) {
+ *     out.println(pow(2, 4) == Math.pow(2, 4));
+ *   }
+ * }
+ *
+ */
