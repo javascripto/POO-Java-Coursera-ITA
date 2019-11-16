@@ -18,8 +18,8 @@ public class Principal {
 		carro.acelerar();
 		carro.frear();
 
-		out.println(carro.toString());
-		out.println(carro2.toString());
+		out.println(carro);
+		out.println(carro2);
 
 	}
 }
