@@ -1,5 +1,6 @@
 import java.util.Map;
 import java.util.HashMap;
+import java.util.function.BiFunction;
 
 public class Pizza {
 	static HashMap<String, Integer> ingredientesDeTodasPizzas = new HashMap<>();
@@ -15,16 +16,9 @@ public class Pizza {
 	}
 
 	Pizza adicionaIngrediente(String ingrediente, int quantidade) {
-		if (ingredientes.get(ingrediente) != null) {
-			ingredientes.put(ingrediente, quantidade + ingredientes.get(ingrediente).intValue());
-		} else {
-			ingredientes.put(ingrediente, quantidade);	
-		}
-		if (ingredientesDeTodasPizzas.get(ingrediente) != null) {
-			ingredientesDeTodasPizzas.put(ingrediente, quantidade + ingredientesDeTodasPizzas.get(ingrediente).intValue());
-		} else {
-			ingredientesDeTodasPizzas.put(ingrediente, quantidade);	
-		}
+		BiFunction<Integer, Integer, Integer> fundirValores = (v1, v2) -> v1 + v2;
+		ingredientes.merge(ingrediente, quantidade, fundirValores);
+		ingredientesDeTodasPizzas.merge(ingrediente, quantidade, fundirValores);
 		return this;
 	}
 	

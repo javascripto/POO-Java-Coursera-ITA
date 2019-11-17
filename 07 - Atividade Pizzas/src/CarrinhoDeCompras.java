@@ -16,10 +16,10 @@ public class CarrinhoDeCompras {
 
 	void imprimirValorTotalDasPizzas() {
 		System.out.println("Preços das pizzas no carrinho:");
-		for (Pizza pizza: listaPizza) {
-			System.out.println(pizza.getPreco());
+		for (int i = 0; i < listaPizza.size(); i++) {
+			System.out.println("Pizza " + (i+1) + ": R$ " + listaPizza.get(i).getPreco());
 		}
-		System.out.println("------------------------------");
+		System.out.println();
 	}
 	
 	void imprimirQuantidadeDeCadaIngrediente() {
@@ -27,5 +27,6 @@ public class CarrinhoDeCompras {
 		for (Map.Entry<String, Integer> ingrediente: Pizza.ingredientesDeTodasPizzas.entrySet()) {
 			System.out.println(ingrediente.getKey() + ": " + ingrediente.getValue());
 		}
+		System.out.println();
 	}
 }
