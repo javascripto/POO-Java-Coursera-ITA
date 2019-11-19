@@ -15,10 +15,10 @@ public class Main {
 }
 
 // Acoplamento = Classe Cliente (Banco) depende da Classe servidora (ContaCorrente)
-// Cart„o CRC (Classe-Responsabilidade ColaboraÁ„o) = Cart„o que expressa a colaboraÁ„o entre classes
+// Cart√£o CRC (Classe-Responsabilidade Colabora√ß√£o) = Cart√£o que expressa a colabora√ß√£o entre classes
 
 /*
- * Cart„o CRC:
+ * Cart√£o CRC:
  * 
  * -----------------------------------------------------------
  * | Classe Banco                                             |

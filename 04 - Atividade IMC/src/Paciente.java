@@ -14,7 +14,7 @@ public class Paciente {
 	
 	String diagnostico() {
 		double IMC = calcularIMC();
-		String kgM2 = String.format(" %.2f", IMC) + " kg/m²";
+		String kgM2 = String.format(" %.2f", IMC) + " kg/mÂ²";
 
 		if (IMC < 16) return "Baixo peso muito grave:" + kgM2;
 		if (IMC >= 16   && IMC <= 16.99) return "Baixo peso grave:" + kgM2;

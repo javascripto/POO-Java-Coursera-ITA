@@ -18,7 +18,7 @@ public class Carro {
 	
 	public String toString() {
 		return "O Carro " + (nome != null ? nome : "") + 
-				" est· a velocidade de " +
+				" est√° a velocidade de " +
 				getVelocidade() + " km/h";
 	}
 }

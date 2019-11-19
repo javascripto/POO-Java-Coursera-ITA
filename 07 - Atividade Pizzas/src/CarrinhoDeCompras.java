@@ -7,7 +7,7 @@ public class CarrinhoDeCompras {
 
 	CarrinhoDeCompras adicionarPizza(Pizza pizza) {
 		if (pizza.ingredientes.size() == 0) {
-			System.out.println("O carrinho não aceita pizza sem ingredientes!");
+			System.out.println("O carrinho nï¿½o aceita pizza sem ingredientes!");
 			return this;
 		}
 		listaPizza.add(pizza);
@@ -15,7 +15,7 @@ public class CarrinhoDeCompras {
 	}
 
 	void imprimirValorTotalDasPizzas() {
-		System.out.println("Preços das pizzas no carrinho:");
+		System.out.println("PreÃ§os das pizzas no carrinho:");
 		for (int i = 0; i < listaPizza.size(); i++) {
 			System.out.println("Pizza " + (i+1) + ": R$ " + listaPizza.get(i).getPreco());
 		}
