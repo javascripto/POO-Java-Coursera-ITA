@@ -7,7 +7,6 @@ public class Biblioteca {
 	private List<Usuario> listaDeUsuarios = new ArrayList<>();
 	private List<Livro> catalogoDeLivros = new ArrayList<>();
 
-
 	Biblioteca registrarUsuarios(Usuario... usuarios) {
 		for (Usuario usuario: usuarios)
 			listaDeUsuarios.add(usuario);

@@ -20,14 +20,19 @@ public class Main {
 		biblioteca.adicionarLivrosAoCatalogo(livro1, livro2, livro3, livro4, livro5, livro6);
 
 		biblioteca.emprestarLivro(livro1, fulano);
+		biblioteca.emprestarLivro(livro2, beltrano);
+		biblioteca.emprestarLivro(livro3, cicrano);
+		biblioteca.emprestarLivro(livro4, fulano);
+		biblioteca.emprestarLivro(livro5, fulano);
+		biblioteca.emprestarLivro(livro6, beltrano);
 
 		out.println(fulano.livrosEmprestados);
 
 		biblioteca.devolverLivro(livro1);
 		
-		out.println(fulano.livrosEmprestados);
-		out.println(biblioteca.exibirLivrosEmprestados());
-		System.out.println(biblioteca.exibirLivrosDisponiveis());
+//		out.println(fulano.livrosEmprestados);
+//		out.println(biblioteca.exibirLivrosEmprestados());
+//		System.out.println(biblioteca.exibirLivrosDisponiveis());
 	}
 
 }

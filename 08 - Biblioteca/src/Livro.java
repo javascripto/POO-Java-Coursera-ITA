@@ -13,8 +13,8 @@ public class Livro {
 		this.titulo = titulo;
 		this.autor = autor;
 	}
-	
+
 	public String toString() {
-		return titulo + " - " + autor;
+		return "\"" + (id + 1) + ". "+ titulo +"\"";
 	}
 }
