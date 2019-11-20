@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
 
-public class AntesDepois {
+public class TesteAntesDepois {
 	@BeforeAll
 	static void beforeAll() {
 		out.println("------------------");
