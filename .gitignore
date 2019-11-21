@@ -14,6 +14,10 @@ local.properties
 **/*.class
 **/*.iml
 
+nbproject
+build.xml
+manifest.mf
+
 # External tool builders
 .externalToolBuilders/
 
@@ -58,3 +62,14 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+/03 - Logica das Responsabilidades - Classe Responsabilidade Colaboração (CRC)/nbproject/private/
+/06 - EstaticaVsInstancia/nbproject/private/
+/07 - Atividade Pizzas/nbproject/private/
+/02 - Compra/nbproject/private/
+/09 - Testes unitários com JUnit/nbproject/private/
+/04 - Atividade IMC/nbproject/private/
+/08 - Biblioteca/nbproject/private/
+/01 - Carros/nbproject/private/
+/05 - Pontuação - Colaboração entre classes - Calculadora Bonus em Forum/nbproject/private/
+/01 - Carros/build/
+/08 - Biblioteca/build/
